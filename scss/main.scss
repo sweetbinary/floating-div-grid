@@ -1,0 +1,40 @@
+$text-color: #000;
+$primary-color: #000;
+$border-color: #000;
+$white-color: #fff;
+$link-color: #000;
+$link-bg-color: #fff;
+$link-border-color: #000;
+
+body 
+{ 
+    font-size: 62.5%;
+    color: $text-color; font-family: Courier New, 'Open Sans', sans-serif;
+}
+p {
+    font-size: 1.5em;
+}
+
+p.no-margin {
+    margin: 0;
+}
+
+.link-to-scss {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: $link-color;
+    background: $link-bg-color;
+    border: 1px solid $link-border-color;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: .5em;
+    text-transform: uppercase;
+    &:hover {
+        color: $link-bg-color;
+        background: $link-color;
+    }    
+}
+
+@import "_grid.scss";
+
